@@ -1,2 +1,2 @@
-# MartinIce.github.io
+Никита Тималёв
 Pre-alpha v.
