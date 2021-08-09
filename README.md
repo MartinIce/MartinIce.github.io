@@ -1,2 +1,2 @@
 Никита Тималёв
-Pre-alpha v. 1.1
+Pre-alpha v.
