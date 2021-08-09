@@ -34,7 +34,7 @@ nav {
     width: 100%;
     height: calc(100% - 60px);
     background: url(../img/fon.jpg) round no-repeat;
-
+    opacity: 90%;
 }
 
 .title_container {
@@ -83,7 +83,7 @@ nav {
 .about p {
     margin-top: 40px;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .about input {
@@ -94,4 +94,57 @@ nav {
     font-size: 16px;
     font-weight: 700;
     background: none;
+}
+
+.my_skills h2 {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.my_skills img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-top: 150px;
+}
+
+.my_skills h4 {
+    float: left;
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.icon1 {
+    margin: 0px 100px 0px 300px;
+}
+
+.icon2 {
+    margin: 0px 115px 0px 115px;
+}
+
+.icon3 {
+    margin: 0px 115px 0px 115px;
+}
+
+.icon4 {
+    margin: 0px 300px 0px 115px;
+}
+
+#t1 {
+    margin: 0px 100px 0px 300px;
+}
+
+#t2 {
+    margin: 0px 115px 0px 115px;
+}
+
+#t3 {
+    margin: 0px 115px 0px 115px;
+}
+
+#t4 {
+    margin: 0px 300px 0px 115px;
 }
