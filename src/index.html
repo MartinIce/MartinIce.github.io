@@ -38,97 +38,153 @@
     <div class="about">
         <h2>Обо мне</h2>
         <img src="img/fon.jpg" alt="Пока что картинки нет:)" class="zagl">
-        <p>Текст с чем-нибудь интересным. Например: "Студент ФКТИ ЛЭТИ. Занимаюсь веб-разработкой с момента окончания школы. Прошёл классный курс Андрея Брауна"</p>
+        <p>Текст с чем-нибудь интересным. Например: "Студент ФЭЛ ЛЭТИ. Занимаюсь веб-разработкой с момента окончания школы. Прошёл классный курс Андрея Брауна"</p>
         <input type="submit" value="Скачать резюме">
     </div>
 
     <div class="my_skills">
+
         <h2>Что я умею</h2>
-        <img src="img/fon.jpg" alt="иконка" class="icon1">
-        <img src="img/fon.jpg" alt="иконка" class="icon2">
-        <img src="img/fon.jpg" alt="иконка" class="icon3">
-        <img src="img/fon.jpg" alt="иконка" class="icon4">
-        <h4>Разработка сайта с нуля</h4>
-        <h4>Дизайн сайта</h4>
-        <h4>SEO-оптимизация</h4>
-        <h4>Продвижение</h4>
-        <p id="t1">Напишу сайт с помощью HTML, CSS, JavaScript и php</p>
-        <p id="t2">Пороработаю структуру, блоки, подберу картинки и текст</p>
-        <p id="t3">Проработаю тексты на вашем сайте для повышения позиции в поисковике</p>
-        <p id="t4">Запущу рекламу в Яндекс.Директ, Google Ads</p>
+
+        <div class="skill1">
+            <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="иконка">
+            <h4>Разработка сайта</h4>
+            <p>Писать сайты с помощью HTML, CSS, JavaScript и php</p>
+        </div>
+
+        <div class="skill2">
+            <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="иконка">
+            <h4>Дизайн сайта</h4>
+            <p>Порорабатывать структуру, блоки, подбирать картинки</p>
+        </div>
+
+        <div class="skill3">
+            <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="иконка">
+            <h4>SEO-оптимизация</h4>
+            <p>Создавать тексты на вашем сайте для повышения позиции в поисковике</p>
+        </div>
+
+        <div class="skill4">
+            <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="иконка">
+            <h4>Продвижение</h4>
+            <p>Запускать рекламу в Яндекс.Директ, Google Ads</p>
+        </div>
+
     </div>
 
     <div class="cases">
         <h2>Кейсы</h2>
         <p>Уже имею практический опыт в создании сайтов</p>
-        <input type="submit" value="Влево">
-        <img src="#" alt="Фотка сайта">
-        <input type="submit" value="Вправо">
+        <img src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.png" alt="Фотка сайта">
     </div>
 
-    <div class="calculator_of_price">
+    <div class="price">
         <h2>Расчёт стоимости проекта</h2>
-        <h3>Тип сайта</h3>
-        <select name="type_of_site" id="1">
-            <option value="Лендинг">Лендинг</option>
-            <option value="Сайт-визитка">Сайт-визитка</option>
-            <option value="Блог">Блог</option>
-            <option value="Интернет-магазин">Интернет-магазин</option>
-            <option value="Я не знаю/Ничего из вышеперечисленного">Я не знаю/Ничего из вышеперечисленного</option>
-        </select>
 
-        <h3>Дизайн</h3>
-        <input type="radio" name="design" value="1">Есть готовый дизайн
-        <input type="radio" name="design" value="2">Нужен дизайн
+        <div class="diskl">
+            <p>Стоимость и сроки указаны для примерного понимания длительности работы. Для более точных сроков и цен обращайтесь напрямую</p>
+        </div>
 
-        <h3>Адаптивность</h3>
-        <select name="adaptive" id="2">
-            <option value="Только ПК">Только ПК</option>
-            <option value="Только мобильные устройства">Только мобильные устройства</option>
-            <option value="ПК и мобильные устройства">ПК и мобильные устройства</option>
-        </select>
+        <div class="project_type">
+            <h3>ТИП САЙТА</h3>
+            <select name="type_of_site" id="1">
+                <option value="" default disabled selected>Выберите пункт...</option>
+                <option value="Лендинг">Лендинг</option>
+                <option value="Сайт-визитка">Сайт-визитка</option>
+                <option value="Блог">Блог</option>
+                <option value="Интернет-магазин">Интернет-магазин</option>
+                <option value="Я не знаю/Ничего из вышеперечисленного">Я не знаю/Ничего из вышеперечисленного</option>
+            </select>
+        </div>
 
-        <h3>Сроки</h3>
-        <h3>Стоимость</h3>
+        <div class="design">
+            <h3>ДИЗАЙН</h3>
+            <input class="r1" type="radio" name="design" value="1">Есть готовый дизайн
+            <input class="r2" type="radio" name="design" value="2">Нужен дизайн
+        </div>
+
+        <div class="adapt">
+            <h3>АДАПТИВНОСТЬ</h3>
+            <select name="adaptive" id="2">
+                <option value="" default disabled selected>Выберите пункт...</option>
+                <option value="Только ПК">Только ПК</option>
+                <option value="Только мобильные устройства">Только мобильные устройства</option>
+                <option value="ПК и мобильные устройства">ПК и мобильные устройства</option>
+            </select>
+        </div>
+
+        <img src="../src/img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png" alt="Плакать">
+
+        <div class="time0">
+            <h4>Сроки</h4>
+        </div>
+
+        <div class="cost0">
+            <h4>Стоимость</h4>
+        </div>
+
     </div>
 
     <div class="stats">
         <h2>Немного статистики</h2>
-        <img src="#" alt="иконка2">
-        <img src="#" alt="иконка2">
-        <img src="#" alt="иконка2">
-        <img src="#" alt="иконка2">
-        <p>Число 1</p>
-        <p>Число 2</p>
-        <p>Число 3</p>
-        <p>Число 4</p>
-        <h4>СЧАСТЛИВЫХ КЛИЕНТОВ</h4>
-        <h4>ЧАСОВ РАБОТЫ</h4>
-        <h4>ПРОЕКТОВ ЗАВЕРШЕНО</h4>
-        <h4>НАГРАД ПОЛУЧЕНО</h4>
+
+        <div class="clients">
+            <img src="../src/img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="иконка2">
+            <p>1</p>
+            <h4>СЧАСТЛИВЫХ КЛИЕНТОВ</h4>
+        </div>
+
+        <div class="worktime">
+            <img src="../src/img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="иконка2">
+            <p>10</p>
+            <h4>ЧАСОВ РАБОТЫ</h4>
+        </div>
+
+        <div class="pf">
+            <img src="../src/img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="иконка2">
+            <p>1</p>
+            <h4>ПРОЕКТОВ ЗАВЕРШЕНО</h4>
+        </div>
+
+        <div class="achiv">
+            <img src="../src/img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="иконка2">
+            <p>0</p>
+            <h4>НАГРАД ПОЛУЧЕНО</h4>
+        </div>
+
     </div>
 
     <div class="feedback">
         <h2>Отзывы</h2>
-        <img src="#" alt="Фото/лого заказчика">
+        <img src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="Фото/лого заказчика">
         <p>Текст отзыва</p>
         <p><b>Имя,</b> должность</p>
     </div>
 
     <div class="contacts">
         <h2>Мои контакты</h2>
-        <img src="#" alt="иконка3">
-        <img src="#" alt="иконка3">
-        <img src="#" alt="иконка3">
-        <p>Адрес</p>
-        <p>Мыло</p>
-        <p>Телефон</p>
+
+        <div class="adress">
+            <img src="../src/img/%D0%B3%D0%B5%D0%BE.png" alt="иконка3">
+            <p>Санкт-Петербург</p>
+        </div>
+
+        <div class="mail">
+            <img src="../src/img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="иконка3">
+            <p>n.timalyov@gmail.com</p>
+        </div>
+
+        <div class="phone">
+            <img src="../src/img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="иконка3">
+            <p>+7-911-484-70-21</p>
+        </div>
+
         <h3>Оставьте мне сообщение</h3>
-        <textarea name="name" id="3" cols="30" rows="1" placeholder="Ваше имя"></textarea>
-        <textarea name="name" id="4" cols="30" rows="1" placeholder="Адрес эл. почты"></textarea><br>
-        <textarea name="name" id="5" cols="64" rows="10" placeholder="Текст сообщения"></textarea><br>
-        <input type="submit" value="Отправить сообщение" class="a123"><br>
-        <img src="#" alt="Иконки соц. сетей">
+
+        <textarea name="name" class="name1" id="3" cols="30" rows="1" placeholder="Ваше имя"></textarea>
+        <textarea name="name" class="email1" id="4" cols="30" rows="1" placeholder="Адрес эл. почты"></textarea><br>
+        <textarea name="name" class="text1" id="5" cols="64" rows="10" placeholder="Текст сообщения"></textarea><br>
+        <input type="submit" value="Отправить" class="sendmsg"><br>
     </div>
 
     <div class="dno">
