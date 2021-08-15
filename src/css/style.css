@@ -5,7 +5,8 @@ body {
 nav {
     width: 100%;
     height: 60px;
-    background: #344051
+    background: #344051;
+    position: fixed;
 }
 
 .logo {
@@ -14,6 +15,9 @@ nav {
     margin-left: 300px;
     line-height: 60px;
     float: left;
+    -webkit-animation: comming 1s;
+    -o-animation: comming 1s;
+    animation: comming 1s;
 }
 
 .menu {
@@ -28,24 +32,64 @@ nav {
     line-height: 60px;
     margin-right: 25px;
     text-transform: uppercase;
+    -webkit-animation: menus 0.5s forwards;
+    -o-animation: menus 0.5s forwards;
+    animation: menus 0.5s forwards;
+    opacity: 0;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu li a {
+    transform: scale(1);
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+    transform: scale(1)
+}
+
+.menu li a:hover {
+    color: #e88604;
+    transform: scale(1.1)
 }
 
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/fon.jpg) round no-repeat;
-    opacity: 90%;
+}
+
+.main input {
+    transition: transform 0.3s, color 0.3s, background 0.3s;
+    transform: scale(1);
+}
+
+.main input:hover {
+    transform: scale(1.1);
+    background: #344051;
+    color: white;
 }
 
 .title_container {
     float: left;
     margin: 250px 0px 0px 270px;
     text-align: center;
+    -webkit-animation: title 1s forwards;
+    -o-animation: title 1s forwards;
+    animation: title 1s forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
 }
 
 .title_container h1 {
     font-size: 60px;
     font-weight: 600;
+    color: #2c384a;
 }
 
 .title_container h4 {
@@ -56,12 +100,12 @@ nav {
 
 .title_container input {
     margin: 25px 20px 0px 20px;
-    border: 3px solid black;
+    border: 3px solid #344051;
     border-radius: 4px;
     padding: 7px;
     font-size: 16px;
     font-weight: 700;
-    background: none;
+    background-color: white;
 }
 
 .about h2 {
@@ -94,6 +138,14 @@ nav {
     font-size: 16px;
     font-weight: 700;
     background: none;
+    transform: scale(1);
+    transition: all 0.5s
+}
+
+.about input:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #344051
 }
 
 .my_skills {
@@ -240,6 +292,27 @@ nav {
     margin-bottom: 7px;
     margin-top: 3px;
     font-size: 24px;
+}
+
+.zayavka {
+    height: 45px;
+    width: 160px;
+    border: 3px solid black;
+    border-radius: 3px;
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 509.5px;
+}
+
+.zayavkaknopka {
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .stats h2 {
@@ -418,6 +491,14 @@ nav {
     margin-left: 697px;
     color: white;
     font-weight: 700;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.sendmsg:hover {
+    color: #344051;
+    background-color: white;
+    transform: scale(1.1);
 }
 
 .dno {
@@ -425,5 +506,63 @@ nav {
     padding-top: 36px;
     height: 80px;
     color: white;
-    background-color: #354051;
+    background-color: #344051;
+}
+
+@keyframes comming {
+    from {
+        margin-left: -100px;
+    }
+
+    to {
+        margin-left: 300px;
+    }
+}
+
+@keyframes menus {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 1.3s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.9s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 2.2s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+@keyframes title {
+    from {
+        margin-left: -1000px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 270px;
+        opacity: 1;
+    }
 }
