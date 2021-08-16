@@ -3,16 +3,17 @@ body {
 }
 
 nav {
-    width: 100%;
+    width: 99%;
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 100;
 }
 
 .logo {
     color: #fff;
     font-size: 28px;
-    margin-left: 300px;
+    margin-left: 13%;
     line-height: 60px;
     float: left;
     -webkit-animation: comming 1s;
@@ -21,8 +22,7 @@ nav {
 }
 
 .menu {
-    float: left;
-    padding-left: 320px;
+    float: right;
 }
 
 .menu li {
@@ -60,7 +60,19 @@ nav {
 
 .main {
     width: 100%;
+    height: 800px;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
     height: 100%;
+    z-index: 1;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    filter: blur(5px);
     background: url(../img/fon.jpg) round no-repeat;
 }
 
@@ -76,14 +88,16 @@ nav {
 }
 
 .title_container {
+    position: relative;
     float: left;
-    margin: 250px 0px 0px 270px;
+    margin: 16.45% 0px 0px 17.77%;
     text-align: center;
     -webkit-animation: title 1s forwards;
     -o-animation: title 1s forwards;
     animation: title 1s forwards;
     animation-delay: 2.5s;
     opacity: 0;
+    z-index: 2;
 }
 
 .title_container h1 {
@@ -128,10 +142,11 @@ nav {
     margin-top: 40px;
     text-align: center;
     font-size: 17px;
+    padding: 2%
 }
 
 .about input {
-    margin: 300px 0px 0px 690px;
+    margin: 16% 0px 0px calc(50% - 74.1px);
     border: 3px solid black;
     border-radius: 4px;
     padding: 7px;
@@ -139,7 +154,7 @@ nav {
     font-weight: 700;
     background: none;
     transform: scale(1);
-    transition: all 0.5s
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
 }
 
 .about input:hover {
@@ -165,6 +180,7 @@ nav {
     float: left;
     text-align: center;
     margin-top: 100px;
+    width: 15.15%
 }
 
 .my_skills h4 {
@@ -176,68 +192,72 @@ nav {
 
 .my_skills p {
     margin-top: 15px;
-    width: 230px;
-    padding-left: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .skill1 {
-    margin-left: 170px;
-    margin-right: 40px;
+    margin-left: 11.2%;
+    margin-right: 2.5%;
 }
 
 .skill2 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .skill3 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .skill4 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2.5%;
+    margin-right: 11.2%;
 }
 
 .skill1 h4 {
-    margin: 40px 40px 0px 40px;
+    padding-top: 43px;
 }
 
 .skill2 h4 {
-    margin: 43px 40px 0px 40px;
+    padding-top: 43px;
 }
 
 .skill3 h4 {
-    margin: 33px 40px 0px 40px;
+    padding-top: 33px;
 }
 
 .skill4 h4 {
-    margin: 37px 40px 0px 40px;
+    padding-top: 37px;
 }
 
 .skill3 p {
     padding-left: 5px;
 }
 
-.cases h2 {
+.cases {
     text-align: center;
+}
+
+.cases h2 {
     font-size: 50px;
+    margin-top: -50px;
     font-weight: 600;
     font-family: Bahnschrift, Arial;
 }
 
 .cases p {
     margin-top: 40px;
-    text-align: center;
     font-size: 18px;
 }
 
 .cases img {
-    margin-left: -100px;
+    display: block;
     margin-top: 50px;
-    height: 90%;
-    width: 90%
+    height: 60%;
+    width: 60%;
+    margin-left: 20%
 }
 
 .price h2 {
@@ -246,6 +266,7 @@ nav {
     font-weight: 600;
     font-family: Bahnschrift, Arial;
     margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 .price h3 {
@@ -256,7 +277,7 @@ nav {
 }
 
 .price div {
-    margin-left: 250px;
+    margin-left: 17.7%;
     margin-bottom: 30px;
 }
 
@@ -264,7 +285,7 @@ nav {
     height: 30px;
     background-color: #eee;
     margin-bottom: 5px;
-    width: 1019px;
+    width: 83%;
     height: 40px;
 }
 
@@ -278,14 +299,14 @@ nav {
 }
 
 .price img {
-    width: 1019px;
-    margin-left: 250px;
+    width: 68%;
+    margin-left: 17.7%;
 }
 
 .diskl p {
-    margin-left: -250px;
     text-align: center;
     font-size: 18px;
+    margin-left: -16.5%
 }
 
 .price h4 {
@@ -294,25 +315,25 @@ nav {
     font-size: 24px;
 }
 
-.zayavka {
-    height: 45px;
-    width: 160px;
-    border: 3px solid black;
-    border-radius: 3px;
-    text-align: center;
-    background-color: aquamarine;
-    font-size: 16px;
-    font-weight: 700;
-    margin-left: 509.5px;
-}
-
 .zayavkaknopka {
     font-size: 16px;
     font-weight: 700;
     background: none;
     padding: 5px;
     text-align: center;
-    padding-top: 10px;
+    height: 45px;
+    width: 160px;
+    border: 3px solid black;
+    border-radius: 3px;
+    margin-left: 35%;
+    transform: scale(1);
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.zayavkaknopka:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #344051;
 }
 
 .stats h2 {
@@ -322,12 +343,12 @@ nav {
     font-size: 40px;
     font-weight: 600;
     font-family: Bahnschrift, Arial;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .stats div {
     float: left;
-    width: 200px
+    width: 9.87%;
 }
 
 .stats {
@@ -344,19 +365,19 @@ nav {
 }
 
 .clients {
-    margin: 0px 40px 0px 229.5px
+    margin: 0px 4.5% 0px 17%
 }
 
 .worktime {
-    margin: 0px 50px 0px 40px
+    margin: 0px 4.5% 0px 4.5%
 }
 
 .pf {
-    margin: 0px 40px 0px 50px
+    margin: 0px 9% 0px 4.5%
 }
 
 .achiv {
-    margin: 0px 40px 0px 40px
+    margin-right: 10%
 }
 
 .stats p {
@@ -381,6 +402,7 @@ nav {
 
 .feedback {
     text-align: center;
+    height: 500px;
 }
 
 
@@ -390,6 +412,7 @@ nav {
     font-weight: 600;
     font-family: Bahnschrift, Arial;
     margin-bottom: 50px;
+    margin-top: -50px;
 }
 
 .feedback img {
@@ -411,8 +434,8 @@ nav {
     font-size: 50px;
     font-weight: 600;
     font-family: Bahnschrift, Arial;
-    margin-bottom: 50px;
-    padding-top: 50px;
+    margin-bottom: 2%;
+    padding-top: 3.3%;
 }
 
 .contacts p {
@@ -425,7 +448,7 @@ nav {
 
 .contacts div {
     float: left;
-    width: 200px;
+    width: 13.16%;
     text-align: center;
 }
 
@@ -434,7 +457,7 @@ nav {
 }
 
 .adress {
-    margin: 0px 45px 0px 359.5px;
+    margin: 0px 2.96% 0px 23.66%;
 }
 
 .adress img {
@@ -442,17 +465,17 @@ nav {
 }
 
 .mail {
-    margin: 0px 55px 0px 45px
+    margin: 0px 3.62% 0px 2.96%
 }
 
 .phone {
-    margin: 0px 359.5px 0px 55px
+    margin: 0px 23.66% 0px 3.62%
 }
 
 .contacts h3 {
     text-align: center;
     font-size: 20px;
-    margin-top: 160px;
+    margin-top: 9%;
     margin-bottom: 30px;
 }
 
@@ -463,36 +486,36 @@ nav {
 }
 
 .name1 {
-    margin-left: 394.5px;
+    margin-left: 26%;
     height: 30px;
-    width: 350px;
+    width: 23%;
 }
 
 .email1 {
     height: 30px;
-    margin-left: 26px;
-    width: 350px;
+    margin-left: 1.6%;
+    width: 23%;
 }
 
 .text1 {
-    margin-left: 394.5px;
-    height: 95px;
-    width: 730px;
+    margin-left: 26%;
+    height: 14%;
+    width: 48%;
     margin-top: 15px;
 }
 
 .sendmsg {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 125px;
     height: 45px;
     border: 2px solid white;
     border-radius: 3px;
     background: none;
-    margin-left: 697px;
+    margin-left: calc(50% - 62.5px);
     color: white;
     font-weight: 700;
     transform: scale(1);
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
 .sendmsg:hover {
@@ -503,19 +526,19 @@ nav {
 
 .dno {
     text-align: center;
-    padding-top: 36px;
-    height: 80px;
+    padding-top: 25px;
+    height: 60px;
     color: white;
     background-color: #344051;
 }
 
 @keyframes comming {
     from {
-        margin-left: -100px;
+        margin-left: -1000px;
     }
 
     to {
-        margin-left: 300px;
+        margin-left: 13%;
     }
 }
 
